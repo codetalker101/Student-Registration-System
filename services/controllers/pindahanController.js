@@ -15,7 +15,7 @@ exports.createPindahan = async (req, res) => {
   }
 };
 
-// get all siswa
+// get all pindahan
 exports.getAllPindahan = async (req, res) => {
   try {
     const allPindahan = await pool.query(
@@ -27,7 +27,7 @@ exports.getAllPindahan = async (req, res) => {
   }
 };
 
-// get one siswa
+// get one pindahan 
 exports.getOnePindahan = async (req, res) => {
   try {
     const id = parseInt(req.params.id);
@@ -40,7 +40,7 @@ exports.getOnePindahan = async (req, res) => {
   }
 };
 
-// update a siswa
+// update a pindahan 
 exports.updateOnePindahan = async (req, res) => {
   try {
     const id = parseInt(req.params.id);
@@ -56,7 +56,7 @@ exports.updateOnePindahan = async (req, res) => {
   }
 };
 
-// delete a siswa
+// delete a pindahan
 exports.deleteOnePindahan = async (req, res) => {
   try {
     const id = parseInt(req.params.id);
