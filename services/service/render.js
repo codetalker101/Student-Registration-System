@@ -14,7 +14,24 @@ exports.pindahanSiswa = (req, res) => {
   res.render("siswa/pindahanSiswa")
 }
 
+// ADMIN DASHBOARD
+
 exports.adminLogin = (req, res) => {
   res.render("login/adminLogin")
 }
 
+exports.adminDashboard = (req, res) => {
+  res.render("administrasi/index")
+}
+
+exports.siswaDatabases = (req, res) => {
+  res.render("administrasi/siswaDatabases")
+}
+
+exports.ortuDatabases = (req, res) => {
+  res.render("administrasi/ortuDatabases")
+}
+
+exports.usersDatabases = (req, res) => {
+  res.render("administrasi/usersDatabases")
+}

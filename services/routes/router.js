@@ -18,6 +18,13 @@ route.get('/pindahanSiswa', services.pindahanSiswa)
 
 route.get("/adminLogin", services.adminLogin)
 
+route.get("/adminDashboard", services.adminDashboard)
+
+route.get("/siswaDatabases", services.siswaDatabases)
+
+route.get("/ortuDatabases", services.ortuDatabases)
+
+route.get("/usersDatabases", services.usersDatabases)
 
 // API ROUTE / users route
 

@@ -17,6 +17,11 @@ body {
 #ket-pindahan {
   margin-bottom: 25px;
 }
+
+#title-orangtua {
+  margin-top: 10px;
+}
+
 fieldset {
   margin-left: 35px;
   border: none;

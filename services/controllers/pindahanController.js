@@ -36,7 +36,7 @@ exports.getOnePindahan = async (req, res) => {
     );
     res.status(200).json(onePindahan.rows[0])
   } catch (err) {
-    console.error(error.message)
+    console.error(err.message)
   }
 };
 

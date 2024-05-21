@@ -708,28 +708,28 @@ form .user-details .input-box{
 
 /* Video Presentation Style */
 
-#video {
+#masuk {
   text-align: center;
   background-color: #f4f4f4;
   padding: 100px 60px;
 }
 
-#video .section-heading {
+#masuk .section-heading {
   margin-bottom: 30px;
   text-align: center;
 }
 
-#video .section-heading h1 {
+#masuk .section-heading h1 {
   display: block;
   margin: 0px;
 }
 
-#video .section-heading p {
+#masuk .section-heading p {
   position: relative;
   margin: 0px;
 }
 
-#video .accent-button {
+#masuk .accent-button {
   margin-top: 30px;
 }
 
@@ -1132,7 +1132,7 @@ form .user-details .input-box{
     padding-right: 15px;
   }
 
-  #video {
+  #masuk {
     padding-left: 15px;
     padding-right: 15px;
   }
