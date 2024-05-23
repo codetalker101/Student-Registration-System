@@ -26,6 +26,10 @@ route.get("/ortuDatabases", services.ortuDatabases)
 
 route.get("/usersDatabases", services.usersDatabases)
 
+route.get("/dataPembayaran", services.dataPembayaran)
+
+route.get("/cetakData", services.cetakData)
+
 // API ROUTE / users route
 
 route.post("/users", userController.createUser)

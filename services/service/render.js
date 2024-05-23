@@ -35,3 +35,11 @@ exports.ortuDatabases = (req, res) => {
 exports.usersDatabases = (req, res) => {
   res.render("administrasi/usersDatabases")
 }
+
+exports.dataPembayaran = (req, res) => {
+  res.render("administrasi/dataPembayaran")
+}
+
+exports.cetakData = (req, res) => {
+  res.render("administrasi/cetakData")
+}
