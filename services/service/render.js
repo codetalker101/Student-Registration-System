@@ -21,7 +21,7 @@ exports.adminLogin = (req, res) => {
 }
 
 exports.adminDashboard = (req, res) => {
-  res.render("administrasi/index")
+  res.render("administrasi/adminDashboard")
 }
 
 exports.siswaDatabases = (req, res) => {
@@ -40,6 +40,10 @@ exports.dataPembayaran = (req, res) => {
   res.render("administrasi/dataPembayaran")
 }
 
-exports.cetakData = (req, res) => {
-  res.render("administrasi/cetakData")
+exports.cetakSiswa = (req, res) => {
+  res.render("administrasi/cetakSiswa")
+}
+
+exports.cetakOrangtua = (req, res) => {
+  res.render("administrasi/cetakOrangtua")
 }

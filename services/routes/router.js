@@ -4,6 +4,7 @@ const route = express();
 const userController = require("../controllers/userController")
 const siswaController = require("../controllers/siswaController")
 const ortuController = require("../controllers/ortuController")
+const cetakSiswa = require("../controllers/cetakSiswa")
 const services = require("../service/render")
 
 // ROOT ROUTE
@@ -28,7 +29,6 @@ route.get("/usersDatabases", services.usersDatabases)
 
 route.get("/dataPembayaran", services.dataPembayaran)
 
-route.get("/cetakData", services.cetakData)
 
 // API ROUTE / users route
 
