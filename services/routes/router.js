@@ -29,6 +29,8 @@ route.get("/usersDatabases", services.usersDatabases)
 
 route.get("/dataPembayaran", services.dataPembayaran)
 
+route.get("/cetakSiswa", services.cetakSiswa)
+
 
 // API ROUTE / users route
 
