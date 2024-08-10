@@ -43,3 +43,7 @@ exports.dataPembayaran = (req, res) => {
 exports.cetakSiswa = (req, res) => {
   res.render("administrasi/cetakSiswa")
 }
+
+exports.pesanMasuk = (req, res) => {
+  res.render("administrasi/pesanMasuk")
+}

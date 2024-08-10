@@ -2,11 +2,11 @@ const pool = require("../database/db");
 // createUser
 exports.createUser = async (req, res) => {
   try {
-    const { username, name, password, hak_akses } = req.body;
+    const { username, name, email, password, hak_akses, created_at, last_login} = req.body;
 
     const newUser = await pool.query(
-      "INSERT INTO users (username, name, password, hak_akses) VALUES($1, $2, $3, $4) RETURNING *",
-      [username, name, password, hak_akses],
+      "INSERT INTO users (username, name, email, password, hak_akses, created_at, last_login) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *",
+      [username, name, email, password, hak_akses, created_at, last_login],
     );
     res.json(newUser.rows[0]);
   } catch (err) {
@@ -42,11 +42,11 @@ exports.getOneUser = async (req, res) => {
 exports.updateOneUser = async (req, res) => {
   try {
     const id = parseInt(req.params.id);
-    const { username, name, password, hak_akses } = req.body;
+    const { username, name, email, password, hak_akses, created_at, last_login } = req.body;
 
     const updateUser = await pool.query(
-      "UPDATE users SET username = $1, name = $2, password = $3, hak_akses = $4 WHERE user_id = $5",
-      [username, name, password, hak_akses, id],
+      "UPDATE users SET username = $1, name = $2, email = $3, password = $4, hak_akses = $5, created_at = $6, last_login = $7 WHERE user_id = $8",
+      [username, name, email, password, hak_akses, created_at, last_login, id],
     );
     res.json("Siswa has been updated");
   } catch (err) {

@@ -1,5 +1,5 @@
 const express = require('express');
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
 const sequelize = require('sequelize')
 const ejs = require('ejs');
 const cookieParser = require('cookie-parser');
