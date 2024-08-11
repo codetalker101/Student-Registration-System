@@ -13,9 +13,19 @@ route.get('/', services.homeRoutes)
 
 route.get('/addSiswa', services.addSiswa)
 
+route.get('/updateSiswa', services.updateSiswa)
+
 route.get('/addOrangtua', services.addOrangtua)
 
-route.get('/pindahanSiswa', services.pindahanSiswa)
+route.get('/updateOrangtua', services.updateOrangtua)
+
+route.get('/addPindahanSiswa', services.addPindahanSiswa)
+
+route.get('/updatePindahanSiswa', services.updatePindahanSiswa)
+
+route.get('/addUser', services.addUser)
+
+route.get('/updateUser', services.updateUser)
 
 route.get("/adminLogin", services.adminLogin)
 

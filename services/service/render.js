@@ -6,12 +6,32 @@ exports.addSiswa = (req, res) => {
   res.render("siswa/addSiswa")
 }
 
+exports.updateSiswa = (req, res) => {
+  res.render("siswa/updateSiswa")
+}
+
 exports.addOrangtua = (req, res) => {
   res.render("orangtua/addOrangtua")
 }
 
-exports.pindahanSiswa = (req, res) => {
-  res.render("siswa/pindahanSiswa")
+exports.updateOrangtua = (req, res) => {
+  res.render("orangtua/updateOrangtua")
+}
+
+exports.addPindahanSiswa = (req, res) => {
+  res.render("siswa/addPindahanSiswa")
+}
+
+exports.updatePindahanSiswa = (req, res) => {
+  res.render("siswa/updatePindahanSiswa")
+}
+
+exports.addUser = (req, res) => {
+  res.render("users/addUser")
+}
+
+exports.updateUser = (req, res) => {
+  res.render("users/updateUser")
 }
 
 // ADMIN DASHBOARD
