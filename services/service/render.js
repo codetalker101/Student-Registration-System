@@ -67,3 +67,7 @@ exports.cetakSiswa = (req, res) => {
 exports.pesanMasuk = (req, res) => {
   res.render("administrasi/pesanMasuk")
 }
+
+exports.showTable = (req, res) => {
+  res.render("administrasi/usersDatabases")
+}

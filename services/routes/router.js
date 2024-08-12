@@ -4,6 +4,7 @@ const route = express();
 const userController = require("../controllers/userController")
 const siswaController = require("../controllers/siswaController")
 const ortuController = require("../controllers/ortuController")
+const showTable = require("../controllers/showTable")
 const cetakSiswa = require("../controllers/cetakSiswa")
 const services = require("../service/render")
 
@@ -54,6 +55,8 @@ route.get("/users/:id", userController.getOneUser)
 route.put("/users/:id", userController.updateOneUser)
 
 route.delete("/users/:id", userController.deleteOneUser)
+
+route.get("/users", showTable.getTableUsers)
 
 // API ROUTE / siswa route
 

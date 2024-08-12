@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const sequelize = require('sequelize')
 const ejs = require('ejs');
 const cookieParser = require('cookie-parser');
+const { showTable } = require('./services/service/render');
 
 const app = express();
 
