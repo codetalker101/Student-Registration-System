@@ -34,6 +34,8 @@ exports.updateUser = (req, res) => {
   res.render("users/updateUser")
 }
 
+
+
 // ADMIN DASHBOARD
 
 exports.adminLogin = (req, res) => {
@@ -68,6 +70,22 @@ exports.pesanMasuk = (req, res) => {
   res.render("administrasi/pesanMasuk")
 }
 
-exports.showTable = (req, res) => {
-  res.render("administrasi/usersDatabases")
+// Siswa Dashboard
+
+exports.siswaDashboard = (req, res) => {
+  res.render("siswa/siswaDashboard")
+}
+
+// ERROR ROUTE
+
+exports.error401 = (req, res) => {
+  res.render("administrasi/401")
+}
+
+exports.error404 = (req, res) => {
+  res.render("administrasi/404")
+}
+
+exports.error500 = (req, res) => {
+  res.render("administrasi/500")
 }

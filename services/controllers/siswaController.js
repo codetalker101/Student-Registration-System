@@ -21,7 +21,9 @@ exports.getAllSiswa = async (req, res) => {
     const allSiswa = await pool.query(
       "SELECT * FROM siswa"
     )
-    res.json(allSiswa.rows)
+
+    console.log(allSiswa.rows)
+    res.render('administrasi/siswaDatabases', { data: allSiswa.rows });
   } catch (err) {
     console.error(err.message)
   }

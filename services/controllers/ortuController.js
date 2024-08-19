@@ -1,4 +1,5 @@
 const pool = require("../database/db");
+
 // create Orang tua / wali
 exports.createOrtu = async (req, res) => {
   try {
@@ -18,7 +19,9 @@ exports.createOrtu = async (req, res) => {
 exports.getAllOrtu = async (req, res) => {
   try {
     const allOrtu = await pool.query("SELECT * FROM orangtua");
-    res.json(allOrtu.rows);
+
+    console.log(allOrtu.rows)
+    res.render("administrasi/ortuDatabases", { data: allOrtu.rows});
   } catch (err) {
     console.error(err.message);
   }

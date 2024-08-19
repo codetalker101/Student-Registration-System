@@ -28,7 +28,7 @@
 
                 
             <!--INCLUDE SIDEBAR-->
-            <%- include("../include/_adminSidebar.ejs") %>
+            <%- include("../include/_siswaSidebar.ejs") %>
 
 
             </div>
@@ -71,23 +71,18 @@
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                      <% if (Array.isArray(data) && data.length > 0) { %>
-                                        <% data.forEach(row => { %>
                                           <tr> 
-                                              <td><%= row.siswa_id %></td>
-                                              <td><%= row.nama_lengkap %></td>
-                                              <td><%= row.jenis_kelamin %></td>
-                                              <td><%= row.no_wa %></td>
+                                              <td>1</td>
+                                              <td>Fetih Mehmet</td>
+                                              <td>Laki-laki</td>
+                                              <td>14-06-2000</td>
+                                              <td>0920309230920392</td>
                                               <td></td>
                                               <td>
                                                 <button class="button-23" role="button"><img src="icons/edit_icon.png"></button>
                                                 <button class="button-23" role="button"><img src="icons/delete_icon.png"></button>
                                               </td>
                                           </tr>
-                                        <% }) %>
-                                      <% } else { %>
-                                        <li>No data available</li>
-                                      <% } %>
                                         <tr>
                                             <td>01</td>
                                             <td>Garrett Winters</td>

@@ -1,4 +1,5 @@
 const pool = require("../database/db");
+
 // createUser
 exports.createUser = async (req, res) => {
   try {
@@ -17,10 +18,13 @@ exports.createUser = async (req, res) => {
 // get all users 
 exports.getAllUsers = async (req, res) => {
   try {
-    const allUsers = await pool.query("SELECT * FROM users");
-    res.json(allUsers.rows);
+    const allUsers = await pool.query('SELECT * FROM users')
+
+    console.log(allUsers.rows)
+    res.render('administrasi/usersDatabases', { data: allUsers.rows });
   } catch (err) {
-    console.error(err.message);
+    console.error('Error fetching data from PostgreSQL:', err.stack);
+    res.status(500).render('error500');
   }
 };
 

@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const sequelize = require('sequelize')
 const ejs = require('ejs');
 const cookieParser = require('cookie-parser');
-const { showTable } = require('./services/service/render');
+const bodyParser = require('body-parser')
 
 const app = express();
 
@@ -19,7 +19,7 @@ dotenv.config({ path: 'config.env' })
 const PORT = process.env.PORT || 8080
 
 // view engine
-app.set('view engine', "ejs");
+app.set('view engine', 'ejs');
 
 // load assets
 app.use(express.static(__dirname + '/assets'));
