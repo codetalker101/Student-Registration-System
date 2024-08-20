@@ -76,6 +76,12 @@ exports.siswaDashboard = (req, res) => {
   res.render("siswa/siswaDashboard")
 }
 
+// Ortu Dashboard
+
+exports.orangtuaDashboard = (req, res) => {
+  res.render("orangtua/orangtuaDashboard")
+}
+
 // ERROR ROUTE
 
 exports.error401 = (req, res) => {

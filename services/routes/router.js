@@ -19,6 +19,8 @@ route.get('/addOrangtua', services.addOrangtua)
 
 route.get('/updateOrangtua', services.updateOrangtua)
 
+route.get('/orangtuaDashboard', services.orangtuaDashboard)
+
 route.get('/addPindahanSiswa', services.addPindahanSiswa)
 
 route.get('/updatePindahanSiswa', services.updatePindahanSiswa)
