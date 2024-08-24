@@ -76,6 +76,10 @@ exports.siswaDashboard = (req, res) => {
   res.render("siswa/siswaDashboard")
 }
 
+exports.asalmulaSiswa = (req, res) => {
+  res.render("siswa/asalmulaSiswa")
+}
+
 // Ortu Dashboard
 
 exports.orangtuaDashboard = (req, res) => {

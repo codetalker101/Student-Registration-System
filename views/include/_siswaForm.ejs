@@ -1,135 +1,181 @@
-<form action="#" class="form">
-      <header>A. KETERANGAN SISWA</header>
-      <fieldset>
-        <div class="input-box">
-          <label>1. Nama Lengkap</label>
-          <input type="text" placeholder="Masukan nama lengkap" required />
-        </div>
-        <div class="input-box">
-          <label>2. Nama Panggilan</label>
-          <input type="text" placeholder="Masukan nama panggilan" required />
-        </div>
-        <div class="gender-box">
-          <h3>3. Jenis Kelamin</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">Laki-laki</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">Perempuan</label>
-            </div>
-          </div>
-        </div>
-        <div class="input-box">
-          <label>4. Tempat Lahir</label>
-          <input type="text" placeholder="Masukan tempat lahir" required />
-        </div>
-        <div class="input-box">
-          <label>5. Tanggal Lahir</label>
-          <input type="date" placeholder="Masukan tanggal lahir" required />
-        </div>
-        <div class="input-box">
-          <label>6. Agama</label>
-          <input type="text" placeholder="Masukan agama" required />
-        </div>
-        <div class="gender-box">
-          <h3>7. Kewarganegaraan</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">WNI</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">WNI Keturunan</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">WNA</label>
-            </div>
-          </div>
-        </div>
-        <div class="input-box">
-          <label>8. Anak Ke-</label>
-          <input type="text" placeholder="" required />
-        </div>
-        <div class="input-box">
-          <label>9. Banyak Saudara Kandung</label>
-          <input type="text" placeholder="" required />
-        </div>
-        <div class="input-box">
-          <label>10. Bahasa Sehari-hari</label>
-          <input type="text" placeholder="Bahasa apa yang di gunakan sehari-hari" required />
-        </div>
-        <div class="input-box">
-          <label>11. Berat Badan</label>
-          <input type="text" placeholder="Masukan berat badan" required />
-        </div>
-        <div class="input-box">
-          <label>12. Tinggi Badan</label>
-          <input type="text" placeholder="Masukan tinggi badan" required />
-        </div>
-        <div class="gender-box">
-          <h3>13. Golongan Darah</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">O</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">A</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">AB</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">B</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">Lainnya/Belum Mengetahui</label>
-            </div>
-          </div>
-        </div>
-        <div class="input-box">
-          <label>14. Penyakit Yang Pernah Diderita</label>
-          <input type="text" placeholder="Masukan penyakit yang pernah diderita peserta didik (Kosongkan jika tidak ada)"
-            required />
-        </div>
-        <div class="input-box">
-          <label>15. Alamat Tempat Tinggal</label>
-          <input type="text" placeholder="Masukan alamat tempat tinggal" required />
-        </div>
-        <div class="input-box">
-          <label>16. Nomor Telepon/HP</label>
-          <input type="text" placeholder="Masukan nomor telephon/hp" required />
-        </div>
-        <div class="input-box">
-          <label>17. Nomor WhatsApp</label>
-          <input type="text" placeholder="Masukan nomor whatsapp" required />
-        </div>
-        <div class="gender-box">
-          <h3>18. Bertampat Tinggal Bersala</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">Orang Tua</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">Wali</label>
-            </div>
-          </div>
-        </div>
-        <div class="input-box">
-          <label>19. Asal TK/PAUD/PG/KB/RT</label>
-          <input type="text" placeholder="Masukan asal TK/PAUD/PG/KB/RT" required />
-        </div>
-      </fieldset> 
-      <button>Simpan</button>
-    </form>
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nama Lengkap</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fullname" placeholder="Masukan nama lengkap..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="nname">Nama Panggilan</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nname" name="nickname" placeholder="Masukan nama panggilan..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="gender">Jenis Kelamin</label>
+      </div>
+      <div class="col-75">
+        <input type="radio" id="gender" name="laki-laki" value="laki-laki">
+        <label for="gender">Laki-laki</label>
+        <input type="radio" id="gender" name="perempuan" value="perempuan">
+        <label for="gender">Perempuan</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="tempatLahir">Tempat Lahir</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="tempatLahir" name="tempatLahir" placeholder="Masukan tempat lahir..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="tanggalLahir">Tanggal Lahir</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="tanggalLahir" name="tanggalLahir" placeholder="Masukan tanggal lahir..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="agama">Agama</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="agama" name="agama" placeholder="Masukan agama peserta didik..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="kewarganegaraan">Kewarganegaraan</label>
+      </div>
+      <div class="col-75">
+        <select id="kewarganegaraan" name="kewarganegaraan">
+          <option value="wni">WNI</option>
+          <option value="wni-keturunan">WNI Keturunan</option>
+          <option value="wna">WNA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="anakKe">Anak Ke-</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="anakKe" name="anak-ke" placeholder="pertama/kedua/ketiga/dst...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="jumlahSaudara">Banyak Saudara Kandung</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="jumlahSaudara" name="jumlahSaudara" placeholder="satu(1)/dua(2)/tiga(3)/dst...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="bahasa">Bahasa Sehari-hari</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="bahasa" name="bahasa" placeholder="Masukan bahasa yang di pakai sehari-hari...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="beratBadan">Berat Badan (kg)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="beratBadan" name="beratBadan" placeholder="Masukan berat badan..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="tinggiBadan">Tinggi Badan (cm)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="tinggiBadan" name="tinggiBadan" placeholder="Masukan tinggi badan..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="golDarah">Golongan Darah</label>
+      </div>
+      <div class="col-75">
+        <select id="golDarah" name="golongandarah">
+          <option value="o">O</option>
+          <option value="a">A</option>
+          <option value="ab">AB</option> 
+          <option value="b">B</option>
+          <option value="lainnya">Lainnya..</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="penyakit">Penyakit Yang Pernah Diderita</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="penyakit" name="penyakit" placeholder="Masukan penyakit yang pernah di derita...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="alamat">Alamat Tempat Tinggal</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="alamat" name="alamat" placeholder="Masukan alamat..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="notlp">Masukan Nomor Telepon/HP</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="notlp" name="notelepon" placeholder="Masukan nomor telepon atau hp..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="noWa">Masukan Nomor Whatsapp</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="noWa" name="nowhatsapp" placeholder="Masukan nomor whatsapp..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="tinggalbersama">Bertempat Tinggal Bersama</label>
+      </div>
+      <div class="col-75">
+        <input type="radio" id="tinggalbersama" name="orangtua" value="orangtua">
+        <label for="tinggalbersama">Orangtua</label>
+        <input type="radio" id="tinggalbersama" name="wali" value="wali">
+        <label for="tinggalbersama">Wali</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="asalTk">Asal TK/PAUD/PG/KB/RT</label>
+      </div>
+      <div class="col-75">
+        <select id="asalTk" name="asaltk">
+          <option value="tk">TK</option>
+          <option value="paud">PAUD</option>
+          <option value="pg">PG</option> 
+          <option value="kb">KB</option>
+          <option value="rt">RT</option>
+        </select>
+      </div>
+    </div><br>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>

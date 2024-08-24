@@ -27,6 +27,8 @@ route.get('/updatePindahanSiswa', services.updatePindahanSiswa)
 
 route.get('/siswaDashboard', services.siswaDashboard)
 
+route.get('/asalmulaSiswa', services.asalmulaSiswa)
+
 route.get('/addUser', services.addUser)
 
 route.get('/updateUser', services.updateUser)

@@ -1,36 +1,79 @@
-<form action="#" class="form"> 
-      <label id="title-orangtua">20. Nama Lengkap</label>
-      <fieldset>
-        <div class="input-box">
-          <label>a. Ayah Kandung</label>
-          <input type="text" placeholder="Masukan nama lengkap" required />
-        </div>
-        <div class="input-box">
-          <label>b. Ibu Kandung</label>
-          <input type="text" placeholder="Masukan nama lengkap" required />
-        </div>  
-      </fieldset>
-      <label id="title-orangtua">21. Pendidikan Tertinggi</h3>
-      <fieldset>
-        <div class="input-box">
-          <label>a. Ayah</label>
-          <input type="text" placeholder="Masukan nama lengkap" required />
-        </div>
-        <div class="input-box">
-          <label>b. Ibu</label>
-          <input type="text" placeholder="Masukan nama lengkap" required />
-        </div>
-      </fieldset>
-      <label id="title-orangtua">22. Pekerjaan</h3>
-      <fieldset>
-        <div class="input-box">
-          <label>a. Ayah</label>
-          <input type="text" placeholder="Masukan nama lengkap" required />
-        </div>
-        <div class="input-box">
-          <label>b. Ibu</label>
-          <input type="text" placeholder="Masukan nama lengkap" required />
-        </div>
-      </fieldset>
-      <button>Simpan</button>
-    </form>
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="namaOrangtua">Nama Ayah</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="namaOrangtua" name="namaAyah" placeholder="Masukan nama ayah kandung..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="namaOrangtua">Nama Ibu</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="namaOrangtua" name="namaIbu" placeholder="Masukan nama ibu kandung..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pendidikanOrangtua">Pendidikan Ayah</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pendidikanOrangtua" name="pendidikanAyah" placeholder="Masukan pendidikan terakhir ayah..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pendidikanOrangtua">Pendidikan Ibu</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pendidikanOrangtua" name="pendidikanIbu" placeholder="Masukan pendidikan terakhir ibu..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pekerjaanOrangtua">Pekerjaan Ayah</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pekerjaanOrangtua" name="pekerjaanAyah" placeholder="Masukan pekerjaan ayah..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="namaWali">Nama Wali Murid (jika ada)<label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="namaWali" name="namaWali" placeholder="Masukan nama wali murid...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pendidikanWali">Pendidikan Tertinggi Wali Murid (jika ada)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pendidikanWali" name="pendidikanWali" placeholder="Masukan pendidikan tertinggi wali..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="hubunganWali">Hubungan Terhadap Anak (jika ada)</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="hubunganWali" name="hubunganWali" placeholder="Masukan hubungan wali terhadap anak...">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pekerjaanWali">Pekerjaan Wali (jika ada)<label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pekerjaanWali" name="pekerjaanWali" placeholder="Masukan pekerjaan wali..">
+      </div>
+    </div><br>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
