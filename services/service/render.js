@@ -39,7 +39,7 @@ exports.updateUser = (req, res) => {
 // ADMIN DASHBOARD
 
 exports.adminLogin = (req, res) => {
-  res.render("login/adminLogin")
+  res.render("administrasi/login")
 }
 
 exports.adminDashboard = (req, res) => {
@@ -89,13 +89,13 @@ exports.orangtuaDashboard = (req, res) => {
 // ERROR ROUTE
 
 exports.error401 = (req, res) => {
-  res.render("administrasi/401")
+  res.render("administrasi/error/401")
 }
 
 exports.error404 = (req, res) => {
-  res.render("administrasi/404")
+  res.render("administrasi/error/404")
 }
 
 exports.error500 = (req, res) => {
-  res.render("administrasi/500")
+  res.render("administrasi/error/500")
 }
