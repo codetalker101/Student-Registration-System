@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Users</title>
+        <title>Edit Home</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/adminTemplates/styles.css" rel="stylesheet" />
         <link href="css/button/button.css" rel="stylesheet"/>
@@ -35,57 +35,51 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Data Users</h1>
+                        <h1 class="mt-4">Edit Home Page</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item"><a href="/adminDashboard">Dashboard</a></li>
-                            <li class="breadcrumb-item active">Users</li>
+                            <li class="breadcrumb-item active">Home Page</li>
                         </ol>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
-                                Tabel Data Users
-                                <button class="button-22" role="button">Cetak Data</button>
+                                Tabel Data
+                                <button class="button-22" role="button">Tambah</button>
                                 </div>
                             <div class="card-body">
                                 <table id="datatablesSimple">
                                     <thead>
                                         <tr>
                                             <th>Id</th>
-                                            <th>Username</th>
-                                            <th>Email</th>
-                                            <th>Hak Akses</th>
-                                            <th>Terakhir Login</th>
+                                            <th>Judul</th>
+                                            <th>Deskripsi</th>
+                                            <th>Banner</th>
+                                            <th>Terakhir ubah</th>
                                             <th></th>
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
                                             <th>Id</th>
-                                            <th>Username</th>
-                                            <th>Email</th>
-                                            <th>Hak Akses</th>
-                                            <th>Terakhir Login</th>
+                                            <th>Judul</th>
+                                            <th>Deskripsi</th>
+                                            <th>Banner</th>
+                                            <th>Terakhir ubah</th>
                                             <th></th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
-                                      <% if (Array.isArray(data) && data.length > 0) { %>
-                                        <% data.forEach(row => { %>
-                                          <tr> 
-                                              <td><%= row.user_id %></td>
-                                              <td><%= row.username %></td>
-                                              <td><%= row.email %></td>
-                                              <td><%= row.hak_akses %></td>
-                                              <td><%= row.last_login %></td>
-                                              <td>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Garrett Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>2011/07/25</td>
+                                            <td>
                                                 <button class="button-23" role="button"><img src="icons/edit_icon.png"></button>
                                                 <button class="button-23" role="button"><img src="icons/delete_icon.png"></button>
-                                              </td>
-                                          </tr>
-                                        <% }) %>
-                                      <% } else { %>
-                                        <li>No data available</li>
-                                      <% } %>
+                                            </td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

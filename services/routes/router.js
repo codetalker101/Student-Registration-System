@@ -21,10 +21,6 @@ route.get('/updateOrangtua', services.updateOrangtua)
 
 route.get('/orangtuaDashboard', services.orangtuaDashboard)
 
-route.get('/addPindahanSiswa', services.addPindahanSiswa)
-
-route.get('/updatePindahanSiswa', services.updatePindahanSiswa)
-
 route.get('/siswaDashboard', services.siswaDashboard)
 
 route.get('/asalmulaSiswa', services.asalmulaSiswa)
@@ -37,9 +33,11 @@ route.get("/adminLogin", services.adminLogin)
 
 route.get("/adminDashboard", services.adminDashboard)
 
-route.get("/dataPembayaran", services.dataPembayaran)
+route.get("/pegawaiDashboard", services.pegawaiDashboard)
 
-route.get("/cetakSiswa", services.cetakSiswa)
+route.get("/editHome", services.editHome)
+
+route.get("/editInformasi", services.editInformasi)
 
 route.get("/pesanMasuk", services.pesanMasuk)
 

@@ -1,4 +1,5 @@
 .button-22 {
+  vertical-align: middle;
   align-items: center;
   appearance: button;
   background-color: #0276FF;
@@ -34,6 +35,7 @@
 }
 
 .button-23 {
+  vertical-align: middle;
   align-items: center;
   appearance: button;
   background-color: #0276FF;
@@ -49,7 +51,7 @@
   font-family: "RM Neue",sans-serif;
   font-size: 100%;
   line-height: 1.15;
-  margin: 1px;
+  margin: 2px;
   padding: 6px 18px;
   text-align: center;
   text-transform: none;

@@ -18,14 +18,6 @@ exports.updateOrangtua = (req, res) => {
   res.render("orangtua/updateOrangtua")
 }
 
-exports.addPindahanSiswa = (req, res) => {
-  res.render("siswa/addPindahanSiswa")
-}
-
-exports.updatePindahanSiswa = (req, res) => {
-  res.render("siswa/updatePindahanSiswa")
-}
-
 exports.addUser = (req, res) => {
   res.render("users/addUser")
 }
@@ -46,6 +38,10 @@ exports.adminDashboard = (req, res) => {
   res.render("administrasi/adminDashboard")
 }
 
+exports.pegawaiDashboard = (req, res) => {
+  res.render("administrasi/pegawaiDashboard")
+}
+
 exports.siswaDatabases = (req, res) => {
   res.render("administrasi/siswaDatabases")
 }
@@ -58,12 +54,12 @@ exports.usersDatabases = (req, res) => {
   res.render("administrasi/usersDatabases")
 }
 
-exports.dataPembayaran = (req, res) => {
-  res.render("administrasi/dataPembayaran")
+exports.editHome = (req, res) => {
+  res.render("administrasi/editHome")
 }
 
-exports.cetakSiswa = (req, res) => {
-  res.render("administrasi/cetakSiswa")
+exports.editInformasi = (req, res) => {
+  res.render("administrasi/editInformasi")
 }
 
 exports.pesanMasuk = (req, res) => {

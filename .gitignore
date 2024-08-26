@@ -2,3 +2,4 @@ node_modules
 .repro
 config.env
 data-siswa.csv
+.gitignore
